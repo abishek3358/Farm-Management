@@ -6,10 +6,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
-
+ container:any = document.querySelector('#container'); 
+ id:any = 1;
   constructor() { }
 
   ngOnInit(): void {
+    
   }
+
+  signUp() {
+    this.id += 1
+  };
+   signIn() {
+    this.id += 1
+  };
+  
 
 }
