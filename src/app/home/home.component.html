@@ -1,1 +1,52 @@
-<p>home works!</p>
+<nav class="navbar navbar-dark fixed-top navbar-expand-md navbar-no-bg">
+    <div class="container">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link scroll-link" href="#top-content">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link scroll-link" href="#section-1">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link scroll-link" href="#section-2">Pages</a>
+                    
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link scroll-link" href="#section-3">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container-fluid ">
+    <ngb-carousel *ngIf="images">
+        <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+                <img [src]="images[0]" alt="Random first slide" class="img1" />
+            </div>
+            <div class="carousel-caption">
+                <h3>First slide label</h3>
+                <p></p>
+            </div>
+        </ng-template>
+        <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+                <img [src]="images[1]" alt="Random second slide" class="img1" />
+            </div>
+            <div class="carousel-caption">
+                <h3>Second slide label</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </ng-template>
+        <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+                <img [src]="images[2]" alt="Random third slide" class="img1" />
+            </div>
+            <div class="carousel-caption">
+                <h3>Third slide label</h3>
+                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            </div>
+        </ng-template>
+    </ngb-carousel>
+</div>
