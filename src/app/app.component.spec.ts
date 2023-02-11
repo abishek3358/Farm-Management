@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'Farm-management'`, () => {
+  it(`should have as title 'farm-management'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('Farm-management');
+    expect(app.title).toEqual('farm-management');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('Farm-management app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('farm-management app is running!');
   });
 });
